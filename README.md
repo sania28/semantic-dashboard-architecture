@@ -24,18 +24,22 @@ The project focuses on building the structural foundation of an enterprise dashb
 ## Project Structure
 
 semantic-dashboard-architecture/
+│
 ├── index.html
+├── README.md
+│
 ├── pages/
 │   ├── dashboard.html
 │   ├── users.html
 │   └── reports.html
+│
 ├── components/
 │   ├── header.html
 │   ├── sidebar.html
 │   └── modal.html
-├── css/
-│   └── styles.css
-└── README.md
+│
+└── css/
+    └── styles.css
 
 ## Semantic HTML Elements Used
 
