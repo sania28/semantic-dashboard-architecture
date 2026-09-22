@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Accessible enterprise dashboard built with semantic HTML5 and WCAG 2.1 principles.">
+    <title>Enterprise Dashboard</title>
+</head>
+
+<body>
+
+<header>
+    <nav aria-label="Primary navigation">
+        <a href="index.html">Dashboard</a>
+        <a href="users.html">Users</a>
+        <a href="reports.html">Reports</a>
+    </nav>
+</header>
+
+<aside aria-label="Dashboard sidebar">
+    <nav aria-label="Sidebar navigation">
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#activity">Recent Activity</a></li>
+            <li><a href="#users">Users</a></li>
+            <li><a href="#reports">Reports</a></li>
+        </ul>
+    </nav>
+</aside>
+
+<main id="main-content">
+
+    <section id="overview" aria-labelledby="dashboard-heading">
+        <h1 id="dashboard-heading">Enterprise Dashboard</h1>
+
+        <p>
+            Monitor users, activity, and business performance from one accessible
+            dashboard.
+        </p>
+
+        <article>
+            <h2>Total Users</h2>
+            <p>1,248</p>
+        </article>
+
+        <article>
+            <h2>Active Sessions</h2>
+            <p>86</p>
+        </article>
+
+        <article>
+            <h2>Monthly Reports</h2>
+            <p>24</p>
+        </article>
+    </section>
+
+    <section id="activity" aria-labelledby="activity-heading">
+        <h2 id="activity-heading">Recent Activity</h2>
+
+        <table>
+            <caption>Recent user activity</caption>
+
+            <thead>
+                <tr>
+                    <th scope="col">User</th>
+                    <th scope="col">Activity</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Status</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Sarah Johnson</td>
+                    <td>Updated profile</td>
+                    <td>21 September 2026</td>
+                    <td>Completed</td>
+                </tr>
+
+                <tr>
+                    <td>Michael Brown</td>
+                    <td>Generated report</td>
+                    <td>21 September 2026</td>
+                    <td>Completed</td>
+                </tr>
+
+                <tr>
+                    <td>Emily Davis</td>
+                    <td>Created account</td>
+                    <td>20 September 2026</td>
+                    <td>Pending</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="users" aria-labelledby="user-form-heading">
+        <h2 id="user-form-heading">Add User</h2>
+
+        <form action="#" method="post">
+
+            <fieldset>
+                <legend>User information</legend>
+
+                <p>
+                    <label for="full-name">Full name</label>
+                    <input
+                        type="text"
+                        id="full-name"
+                        name="full-name"
+                        autocomplete="name"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="email">Email address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="role">Role</label>
+                    <select id="role" name="role" required>
+                        <option value="">Select a role</option>
+                        <option value="admin">Administrator</option>
+                        <option value="manager">Manager</option>
+                        <option value="user">User</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="notes">Additional notes</label>
+                    <textarea
+                        id="notes"
+                        name="notes"
+                        rows="4"
+                        maxlength="500"
+                    ></textarea>
+                </p>
+
+                <button type="submit">Create User</button>
+            </fieldset>
+
+        </form>
+    </section>
+
+    <section id="reports" aria-labelledby="reports-heading">
+        <h2 id="reports-heading">Reports</h2>
+
+        <article>
+            <h3>Monthly Performance Report</h3>
+            <p>Review monthly performance information and activity trends.</p>
+            <button type="button">View Report</button>
+        </article>
+
+        <article>
+            <h3>User Activity Report</h3>
+            <p>Review recent user actions and account activity.</p>
+            <button type="button">View Report</button>
+        </article>
+    </section>
+
+    <section aria-labelledby="dialog-heading">
+        <h2 id="dialog-heading">Account Actions</h2>
+
+        <button type="button" aria-controls="account-dialog">
+            Open account dialog
+        </button>
+
+        <dialog id="account-dialog" aria-labelledby="dialog-title">
+            <h2 id="dialog-title">Account Settings</h2>
+
+            <p>
+                Manage your account preferences and notification settings.
+            </p>
+
+            <form method="dialog">
+                <button type="submit">Close</button>
+            </form>
+        </dialog>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Enterprise Dashboard. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
