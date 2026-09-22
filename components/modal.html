@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accessible Modal</title>
 </head>
+
 <body>
 
-<dialog id="account-dialog" aria-labelledby="dialog-title">
-    <h2 id="dialog-title">Account Settings</h2>
+    <main>
+        <h1>Account Settings</h1>
 
-    <p>
-        Manage your account preferences and notification settings.
-    </p>
+        <dialog id="account-dialog" aria-labelledby="dialog-title">
+            <h2 id="dialog-title">Account Settings</h2>
 
-    <form method="dialog">
-        <button type="submit">Close</button>
-    </form>
-</dialog>
+            <p>
+                Manage your account preferences and notification settings.
+            </p>
+
+            <form method="dialog">
+                <button type="submit">Close</button>
+            </form>
+        </dialog>
+    </main>
 
 </body>
+
 </html>
