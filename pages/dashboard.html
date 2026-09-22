@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Accessible enterprise dashboard overview.">
+    <title>Dashboard Overview</title>
+</head>
+
+<body>
+
+    <header>
+        <nav aria-label="Primary navigation">
+            <a href="../index.html">Dashboard</a>
+            <a href="users.html">Users</a>
+            <a href="reports.html">Reports</a>
+        </nav>
+    </header>
+
+    <aside aria-label="Dashboard sidebar">
+        <nav aria-label="Dashboard sections">
+            <ul>
+                <li><a href="../index.html">Overview</a></li>
+                <li><a href="users.html">Users</a></li>
+                <li><a href="reports.html">Reports</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <section aria-labelledby="overview-title">
+            <h1 id="overview-title">Dashboard Overview</h1>
+
+            <p>
+                View key information and recent activity from the enterprise dashboard.
+            </p>
+        </section>
+
+        <section aria-labelledby="summary-title">
+            <h2 id="summary-title">Summary</h2>
+
+            <article>
+                <h3>Total Users</h3>
+                <p>1,248</p>
+            </article>
+
+            <article>
+                <h3>Active Sessions</h3>
+                <p>86</p>
+            </article>
+
+            <article>
+                <h3>Reports Generated</h3>
+                <p>24</p>
+            </article>
+        </section>
+
+        <section aria-labelledby="activity-title">
+            <h2 id="activity-title">Recent Activity</h2>
+
+            <table>
+                <caption>Recent dashboard activity</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">User</th>
+                        <th scope="col">Activity</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Sarah Johnson</td>
+                        <td>Updated profile</td>
+                        <td>Completed</td>
+                    </tr>
+
+                    <tr>
+                        <td>Michael Brown</td>
+                        <td>Generated report</td>
+                        <td>Completed</td>
+                    </tr>
+
+                    <tr>
+                        <td>Emily Davis</td>
+                        <td>Created account</td>
+                        <td>Pending</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Enterprise Dashboard.</p>
+    </footer>
+
+</body>
+</html>
