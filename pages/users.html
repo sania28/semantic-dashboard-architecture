@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Accessible user management page.">
+    <title>User Management</title>
+</head>
+
+<body>
+
+    <header>
+        <nav aria-label="Primary navigation">
+            <a href="../index.html">Dashboard</a>
+            <a href="users.html" aria-current="page">Users</a>
+            <a href="reports.html">Reports</a>
+        </nav>
+    </header>
+
+    <aside aria-label="Dashboard sidebar">
+        <nav aria-label="Dashboard sections">
+            <ul>
+                <li><a href="../index.html">Overview</a></li>
+                <li><a href="users.html" aria-current="page">Users</a></li>
+                <li><a href="reports.html">Reports</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <section aria-labelledby="users-title">
+            <h1 id="users-title">User Management</h1>
+
+            <p>
+                Add and manage enterprise dashboard users.
+            </p>
+        </section>
+
+        <section aria-labelledby="add-user-title">
+            <h2 id="add-user-title">Add User</h2>
+
+            <form action="#" method="post">
+
+                <fieldset>
+                    <legend>User information</legend>
+
+                    <p>
+                        <label for="full-name">Full name</label>
+                        <input
+                            type="text"
+                            id="full-name"
+                            name="full-name"
+                            autocomplete="name"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="email">Email address</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            autocomplete="email"
+                            required
+                        >
+                    </p>
+
+                    <p>
+                        <label for="role">Role</label>
+                        <select id="role" name="role" required>
+                            <option value="">Select a role</option>
+                            <option value="administrator">Administrator</option>
+                            <option value="manager">Manager</option>
+                            <option value="user">User</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="phone">Phone number</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            autocomplete="tel"
+                        >
+                    </p>
+
+                    <p>
+                        <label for="notes">Additional notes</label>
+                        <textarea
+                            id="notes"
+                            name="notes"
+                            rows="4"
+                            maxlength="500"
+                        ></textarea>
+                    </p>
+
+                    <button type="submit">Create User</button>
+                </fieldset>
+
+            </form>
+        </section>
+
+        <section aria-labelledby="user-list-title">
+            <h2 id="user-list-title">Current Users</h2>
+
+            <table>
+                <caption>Current enterprise users</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Role</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Sarah Johnson</td>
+                        <td>sarah@example.com</td>
+                        <td>Administrator</td>
+                        <td>Active</td>
+                    </tr>
+
+                    <tr>
+                        <td>Michael Brown</td>
+                        <td>michael@example.com</td>
+                        <td>Manager</td>
+                        <td>Active</td>
+                    </tr>
+
+                    <tr>
+                        <td>Emily Davis</td>
+                        <td>emily@example.com</td>
+                        <td>User</td>
+                        <td>Pending</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Enterprise Dashboard.</p>
+    </footer>
+
+</body>
+</html>
